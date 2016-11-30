@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeNextVC">
+            <connections>
+                <outlet property="tableView" destination="FeU-oO-j8E" id="AhR-cF-4dA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaV-SS-cEM">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="hTs-UC-Y8M"/>
+                    </constraints>
+                    <state key="normal" title="增"/>
+                    <connections>
+                        <action selector="buttonCliecked:" destination="-1" eventType="touchUpInside" id="EqC-Bl-EuE"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FeU-oO-j8E">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="03G-0v-KTq"/>
+                        <outlet property="delegate" destination="-1" id="Beu-Yu-vcI"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eaV-SS-cEM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Qt-4f-OwH"/>
+                <constraint firstItem="FeU-oO-j8E" firstAttribute="top" secondItem="eaV-SS-cEM" secondAttribute="bottom" constant="10" id="R5j-Oo-XVd"/>
+                <constraint firstAttribute="trailing" secondItem="eaV-SS-cEM" secondAttribute="trailing" id="TNw-jX-QWP"/>
+                <constraint firstAttribute="trailing" secondItem="FeU-oO-j8E" secondAttribute="trailing" id="WcA-T9-Jzk"/>
+                <constraint firstAttribute="bottom" secondItem="FeU-oO-j8E" secondAttribute="bottom" id="X8h-9o-K9V"/>
+                <constraint firstItem="FeU-oO-j8E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jbI-Qs-Izw"/>
+                <constraint firstItem="eaV-SS-cEM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="mVE-ne-vUl"/>
+            </constraints>
+            <point key="canvasLocation" x="29" y="157"/>
+        </view>
+    </objects>
+</document>
